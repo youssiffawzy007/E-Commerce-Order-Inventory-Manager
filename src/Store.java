@@ -106,11 +106,9 @@ public class Store {
     }
 
     public void showAllCategories() {
-        int counter = 1;
         if (!categories.isEmpty()) {
             System.out.println("Categories :");
-            for (String category : categories)
-                System.out.println(category);
+            categories.forEach(System.out::println);
         } else
             System.out.println("There are no categories yet.");
     }
